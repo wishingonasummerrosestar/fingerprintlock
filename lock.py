@@ -56,7 +56,8 @@ def main():
             else:
                 attempt_count += 1
                 log_attempt(method, "failed", attempt_count)
-                # hard mode: lock the password after x attempts, can only be unlocked by master/sudo (aka me) -- store attempt_count as a variable or csv, which resets upon successful unlocking of the door
+                # hard mode: lock the password after x attempts, can only be unlocked by master/sudo (aka me)
+                # store attempt_count as a variable or csv, which resets upon successful unlocking of the door
                 if attempt_count >= 3:
                     attempt_count = 0
                     sys.exit("too many failed attempts. you have been locked out.")
