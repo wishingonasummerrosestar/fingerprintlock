@@ -1,2 +1,4 @@
 log.csv
 password.txt
+__pycache__
+.pytest_cache
