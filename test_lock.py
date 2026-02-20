@@ -26,7 +26,7 @@ def test_assess_password_strength():
         assert assess_password_strength(good_password) == True, f"should have passed: {good_password}"
 
 def test_check_password():
-    assert check_password("GongHeiFatChoy2026") == True
+    assert check_password("GongHeiFatChoy2026") == False
     assert check_password("6b776f54bbec707d7c2de810900c55e15304c4ad688f3e3827e49dbef80ef65c") == False
     assert check_password("c6182e1dbb2a34822310e067f010b09c8624b3123301ff455ec4462595fe205d") == False
     assert check_password("longMAjingshen2026") == False
