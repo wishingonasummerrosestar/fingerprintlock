@@ -1,32 +1,34 @@
 # Fingerprint Door Lock System
 
-A Raspberry Pi-based door lock system with fingerprint authentication, 
-password fallback, and access logging.
+a razz pi-based door lock system with fingerprint authentication, password fallback, and access logging!
 
 ## Features
-- Fingerprint authentication (via AS608 sensor)
-- Password fallback with strength requirements
-- Lockout after 3 failed attempts
-- Password reset with identity verification
-- CSV access logging with timestamps
+- fingerprint authentication (via AS608 sensor)
+- password fallback with strength requirements
+- lockout after 3 failed attempts
+- password reset with identity verification
+- csv access logging with timestamps
 
 ## Hardware Used
-- Raspberry Pi 3 Model B V1.2
-- AS608 fingerprint sensor (coming soon)
-- Servo motor (coming soon)
-- Raspberry Pi Camera module (coming soon)
+- raspberry pi 3 model b v1.2
+- as608 fingerprint sensor (coming soon)
+- servo motor (coming soon)
+- raspberry pi camera module (coming soon)
 
 ## Setup
-1. Clone this repo
-2. Create a `password.txt` file with your initial hashed password
-3. Install dependencies: `pip install -r requirements.txt`
-4. Run: `python lock.py`
+1. clone this repo
+2. create a `password.txt` file with your initial hashed password
+3. install dependencies: `pip install -r requirements.txt`
+4. run: `python lock.py`
+
+## Notes
+picamera2 needs to be installed on the razz pi directly, since it only works on linux!
 
 ## Usage
-At the prompt, enter `fingerprint`, `password`, or `resetpassword`
+at prompt, enter `fingerprint`, `password`, or `resetpassword`
 
 ## Testing
-Run `python -m pytest test_lock.py`
+run `python -m pytest test_lock.py`
 
 ## Status
-🚧 Work in progress: pending hardware integration of camera + fingerprint sensor
+🚧 work in progress: pending hardware integration of camera + fingerprint sensor
